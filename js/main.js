@@ -16,7 +16,7 @@ for (var i = 0; i < text.length; i++) {
   
   if (text.charAt(i) in dict) {
 				wordVec.push(dict[text.charAt(i)])
-				console.log(dict[text.charAt(i)]);
+				//console.log(dict[text.charAt(i)]);
 			} else {
 				wordVec.push(0)
 			}
@@ -37,7 +37,7 @@ for (var i = 0; i < fzero; i++)
 {
 	wordVec.unshift(0);
 }
-	console.log(wordVecPadded);
+	//console.log(wordVecPadded);
 	return wordVecPadded;
 }
 function LoadModel() {
@@ -56,7 +56,7 @@ $("#wordCnt").html("Loading model,please wait...");
 	model
 		.ready()
 		.then(() => {
-			console.log("Model ready");
+			//console.log("Model ready");
 			NProgress.done();
 			$("#messageText").prop('disabled', false);
 			$("#wordCnt").html("");
@@ -107,8 +107,8 @@ function predictSpam() {
 		1   0
 		male female
 		*/
-		console.log(outputData.output[0]);
-		console.log(outputData.output[1]);
+		//console.log(outputData.output[0]);
+		//console.log(outputData.output[1]);
 		
 		if (outputData.output[1] > outputData.output[0]) {
 			
@@ -122,7 +122,7 @@ function predictSpam() {
 				var msgs=["<img  src=\"img/confused.png\"/>Hmm,I am confused!","(@_@) I dont know!"];
 				var msg = msgs[Math.floor(Math.random() * msgs.length)];
 				$("#messageType").html("<div ><h5>"+msg+"</h5></div>");
-				console.log(Math.abs(outputData.output[1]-outputData.output[0]));
+				//console.log(Math.abs(outputData.output[1]-outputData.output[0]));
 				$("#conf").html("");
 			}
 	
@@ -136,7 +136,7 @@ function predictSpam() {
 		}
 		else{
 			$("#messageType").html("<div ><h5><img  src=\"img/confused.png\"/>Hmm,I am confused!</h5></div>");
-			console.log(Math.abs(outputData.output[1]-outputData.output[0]));
+			//console.log(Math.abs(outputData.output[1]-outputData.output[0]));
 			$("#conf").html("");
 		}
 			
