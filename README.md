@@ -1,8 +1,12 @@
-<<<<<<< HEAD
-# lstmspamdetector
-
-Spam detection using bidriectional LSTM 
-=======
 # nameai
-Gender classification AI from first name
->>>>>>> 480551b546a909f16ea3c89b46a30ac0dd320907
+Gender classification AI from first name.
+
+Deep neural network uses stacked LSTM networks for the classification
+
+Trained using Kaggle US baby names dataset.
+https://www.kaggle.com/kaggle/us-baby-names/
+
+Accuracy :86%
+
+
+
