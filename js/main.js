@@ -1,5 +1,5 @@
 /*
-    Gender classification AI
+    NameAI-Gender classification AI
     Copyright(C) 2018 Rupesh Sreeraman
 */
 "use strict";
@@ -104,7 +104,7 @@ function predictSpam() {
 		input: seqIn
 	}).then(outputData => {
 		/*
-		0   1
+		1   0
 		male female
 		*/
 		console.log(outputData.output[0]);
