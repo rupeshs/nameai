@@ -88,8 +88,8 @@ function checkInput()
 		else{
 			$("#detectBtn").prop('disabled', false);
 		}
-		if (x.length>2)
-	       predictSpam();
+		//if (x.length>2)
+	     //  predictSpam();
 }
 function predictSpam() {
 	NProgress.start();
